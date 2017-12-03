@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import { Http,Response,Headers,RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx'; //everything come under Rx
 // import 'rxjs/add/operator/map';
-// import 'rxjs/add/operator/publishReplay';
 // import 'rxjs/add/operator/do';
 // import 'rxjs/add/observable/of';
 //import 'rxjs/add/observable/catch';
+// import 'rxjs/add/operator/publishReplay';
 
 @Injectable()
 export class AppService{
@@ -63,7 +63,4 @@ export class AppService{
         console.error("error",error);
         return Observable.throw(error);
     }
-    
-  
-
 }

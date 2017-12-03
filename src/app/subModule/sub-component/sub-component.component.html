@@ -1,0 +1,10 @@
+<p>
+  sub-component works!
+</p>
+<div [appHighlight]="directiveValue">Highlight the content</div>
+<span>{{sampleData  | uppercase}}</span>
+<span>{{'60'  | currency:'CAD':'symbol'}}</span>
+<h5>HTML content</h5>
+<div [innerHTML]="recommendedContent | htmlConvertion"></div>
+<app-child-sub>Child Component</app-child-sub>
+

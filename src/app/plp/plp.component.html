@@ -1,0 +1,14 @@
+<p>
+  plp works!
+</p>
+<!-- Directive code -->
+
+<span *ngIf="responseDataPLP === undefined">{{statusMessage}}</span>
+<p *ngIf="responseDataPLP!= undefined">{{responseDataPLP.title}}</p>
+<!--two way data binding using form -->
+<input [(ngModel)]="sampleData " required>
+<!--two way data binding without using form -->
+<input [value]='sampleData' (input)="sampleData=$event.target.value" required>
+<app-sub-component [sampleData]="sampleData" [sampleObject]="sampleObject" (outputFn)="outputFn()"></app-sub-component>
+<div appHighlight>Highlight the plp content</div>
+<button label="Home" (click)="navigateToHome()">Home</button>

@@ -1,0 +1,10 @@
+<p id="domelement">
+  home works!
+</p>
+<span *ngIf="responseDataHome.length === 0">{{statusMessage}}</span>
+<h3 *ngIf="responseDataHome.length != 0">List Of Names</h3>
+<ul>
+  <li *ngFor="let names of responseDataHome">{{names.title}}</li>
+</ul>
+
+

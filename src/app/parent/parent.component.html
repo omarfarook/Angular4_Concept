@@ -1,0 +1,35 @@
+<p>
+  parent works!
+</p>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Age</th>
+    <th>D-O-B</th>
+    <th>index</th>
+    <th>IsEven</th>
+    <th>IsOdd</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sampleObject of sampleObjects;trackBy:trackByName;let i = index;let isEven = even;let isOdd = odd">
+      <td>{{sampleObject.name}}</td>
+      <td>{{sampleObject.gender}}</td>
+      <td>{{sampleObject.age}}</td>
+      <td>{{sampleObject.dob}}</td>
+      <td>{{i}}</td>
+      <td>{{isEven}}</td>
+      <td>{{isOdd}}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="refresh()">Refresh</button>
+<ul>
+  <li>
+    <h2><a [routerLink]="['childone']">childone</a></h2>
+  </li>
+  <li>
+ <h2><a [routerLink]="['childtwo']">childtwo</a></h2>
+ </li>
+ </ul>
+<router-outlet></router-outlet>

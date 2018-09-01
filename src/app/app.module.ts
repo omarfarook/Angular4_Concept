@@ -18,6 +18,9 @@ import { HomeResolve } from './resolve/homeresolve';
 import { ParentComponent } from './parent/parent.component';
 import { ChildOneComponent } from './parent/child-one/child-one.component';
 import { ChildTwoComponent } from './parent/child-two/child-two.component';
+import { CockpitComponent } from './udemy/cockpit/cockpit.component';
+import { ElementServerComponent } from './udemy/element-server/element-server.component';
+import { UdemyHomeComponent } from './udemy/udemy-home/udemy.home.component';
 
 
 
@@ -30,6 +33,9 @@ import { ChildTwoComponent } from './parent/child-two/child-two.component';
     ParentComponent,
     ChildOneComponent,
     ChildTwoComponent,
+    CockpitComponent,
+    ElementServerComponent,
+    UdemyHomeComponent
     //htmlConvertionPipe,
   ],
   imports: [
